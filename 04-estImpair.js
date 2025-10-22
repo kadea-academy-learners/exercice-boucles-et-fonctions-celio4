@@ -14,7 +14,7 @@ function estImpair(n) {
   // Exercice non implémenté : vérifier si n est impair
   // Placeholder neutre : retourne null pour indiquer non-implémentation
  if (typeof n !== 'number' || isNaN(n)) return null;
- if (!Number.isInteger(n)) return null;
+ if (!Number.isInteger(n)) return false ;
  
 return n % 2 !== 0;
 }

@@ -15,7 +15,8 @@ function multiplication(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') return undefined;
   if (isNaN(a) || isNaN(b)) return undefined;
 
-  return a * b;
+  const result = a * b;
+  return result === 0 ? 0 : result;
 }
 
 // Ne pas modifier la ligne ci-dessous
