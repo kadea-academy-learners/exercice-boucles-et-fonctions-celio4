@@ -12,7 +12,13 @@
 function somme(n) {
   // Exercice non implémenté : retourner la somme de 1 à n
   // Placeholder neutre : retourne 0 pour indiquer non-implémentation
-  return 0;
+  if (typeof n !== 'number' || isNaN(n) || n < 1) return 0;
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    total += i; // ajouter i à total
+  
+}
+  return total;
 }
 
 // Ne pas modifier la ligne ci-dessous
